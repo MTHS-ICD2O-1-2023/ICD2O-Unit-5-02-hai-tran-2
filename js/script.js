@@ -11,9 +11,9 @@
 function generateRandomNumber() {
   const randomNumber = Math.floor(Math.random() * 6) + 1
 
-  const optionPositive = document.getElementById('option-positive').checked
+  const userPositive = document.getElementById('option-positive').checked
 
-  if (optionPositive == true) {
+  if (userPositive == true) {
     document.getElementById("result").innerHTML = "The random number is : " + randomNumber
   } else {
     document.getElementById("result").innerHTML = "The random number is : -" + randomNumber
